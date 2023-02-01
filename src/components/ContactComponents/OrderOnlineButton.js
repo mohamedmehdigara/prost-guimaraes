@@ -4,12 +4,12 @@ import styled from "styled-components"
 
 import { SectionButton } from "../../utils"
 
-export default function ContactButton() {
+export default function OrderOnlineButton(props) {
   return (
-    <ButtonWrapper>
+    <ButtonWrapper {...props}>
       <a
         style={{ textDecoration: "none" }}
-        href="https://www.yelp.com"
+        href="https://glovoapp.com/pt/pt/guimaraes/prost-gms"
         target="_blank"
       >
         <SectionButton style={{ margin: "0 auto" }}>Order Online</SectionButton>

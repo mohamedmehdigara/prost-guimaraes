@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import { styles } from "../../../utils"
-import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa"
+import { FaInstagram, FaFacebook } from "react-icons/fa"
 
 export default class NavbarIcons extends Component {
   state = {
@@ -13,11 +13,6 @@ export default class NavbarIcons extends Component {
       },
       {
         id: 2,
-        icon: <FaTwitter className="icon twitter-icon" />,
-        path: "https://www.twitter.com",
-      },
-      {
-        id: 3,
         icon: <FaInstagram className="icon instagram-icon" />,
         path: "https://www.instagram.com",
       },
@@ -25,7 +20,7 @@ export default class NavbarIcons extends Component {
   }
   render() {
     return (
-      <IconWrapper>
+      <IconsWrapper>
         {this.state.icons.map(i => {
           return (
             <a
@@ -38,33 +33,36 @@ export default class NavbarIcons extends Component {
             </a>
           )
         })}
-      </IconWrapper>
+      </IconsWrapper>
     )
   }
 }
 
-const IconWrapper = styled.div`
-  .icon {
-    font-size: 1.3rem;
-    cursor: pointer;
-    ${styles.transFunction()};
-  }
-  .facebook-icon {
-    color: #3b579d;
-  }
-  .twitter-icon {
-    color: #3ab7f0;
-  }
-  .instagram-icon {
-    color: #da5f53;
-  }
-  .icon:hover {
-    color: ${styles.colors.mainYellow};
-  }
+const IconsWrapper = styled.div`
   display: none;
   @media (min-width: 768px) {
     display: flex;
-    width: 10rem;
     justify-content: space-around;
+  }
+
+  a {
+    margin-inline: 1rem;
+  }
+
+  .icon {
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: ${styles.colors.mainGrey};
+
+    &:hover {
+      color: ${styles.colors.mainYellow};
+    }
+  }
+
+  .facebook-icon:hover {
+    color: #3b579d; 
+  }
+  .instagram-icon:hover {
+    color: #da5f53; 
   }
 `
