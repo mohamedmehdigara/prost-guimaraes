@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `Prost!`,
     description: `Restaurant Website built with GatsbyJS`,
-    author: `Michael Claus`,
+    author: `Ahmed Tokyo`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -41,7 +41,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.svg`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.svg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
