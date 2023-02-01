@@ -33,7 +33,7 @@ const Locations = () => {
             {
               address: "Praça de São Tiago 11, 4880-445 Guimarães",
               addressLink: "https://www.google.com/maps/place/Prost!/@41.4434223,-8.2955322,17z/data=!3m1!4b1!4m5!3m4!1s0xd24efe533983059:0x8c96be163e474178!8m2!3d41.4434223!4d-8.2933382",
-              phone: "913-680-152",
+              phone: "913 680 152",
               hours: {
                 Mon_Sat: "12pm - 2am",
                 Sun: "3pm - 2am",

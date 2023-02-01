@@ -20,7 +20,7 @@ const IndexPage = () => (
     <HomeHeader image={image}>
       <HomeBanner
         title="PROST!"
-        subtitle1={{ address: "Praça de São Tiago 11, Guimarães", phone: "913-680-152" }}
+        subtitle1={{ address: "Praça de São Tiago 11, Guimarães", phone: "913 680 152" }}
       >
         <BannerButtonWrapper>
           <Link to="/menu" style={{ textDecoration: "none" }}>
