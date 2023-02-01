@@ -15,8 +15,9 @@ const LocationCard = ({ locationInfo, fluid }) => {
         <h4 className="phone">{locationInfo.phone}</h4>
         <div className="hours">
           <p>Hours</p>
-          <p>Mon - Fri: {locationInfo.hours.Mon_Fri}</p>
-          <p>Sat - Sun: {locationInfo.hours.Sat_Sun}</p>
+          <p>Mon - Sat: {locationInfo.hours.Mon_Sat}</p>
+          <p>Sun: {locationInfo.hours.Sun}</p>
+          <p>Tue: {locationInfo.hours.Tue}</p>
         </div>
       </div>
       <div className="description">

@@ -31,21 +31,12 @@ const Locations = () => {
           let locations = data.getLocations.edges
           let locationInfo = [
             {
-              address: "1234 9th Ave, SF",
-              phone: "(415) 123-4567",
+              address: "Praça de São Tiago 11, 4880-445 Guimarães",
+              phone: "913-680-152",
               hours: {
-                Mon_Fri: "10am - 11pm",
-                Sat_Sun: "9am - 1am",
-              },
-              description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid odit voluptate magni quas impedit rerum itaque, obcaecati libero facilis eaque laboriosam iste veniam nulla necessitatibus",
-            },
-            {
-              address: "4321 12 St, SF",
-              phone: "(415) 321-7654",
-              hours: {
-                Mon_Fri: "10am - 11pm",
-                Sat_Sun: "9am - 1am",
+                Mon_Sat: "12pm - 2am",
+                Sun: "3pm - 2am",
+                Tue: "closed",
               },
               description:
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid odit voluptate magni quas impedit rerum itaque, obcaecati libero facilis eaque laboriosam iste veniam nulla necessitatibus",
@@ -70,13 +61,13 @@ const LocationsWrapper = styled.div`
   display: grid;
   grid-template-columns: auto;
   grid-row-gap: 2rem;
-  max-width: 950px;
+  max-width: 475px;
   margin: 2rem auto;
-  @media (min-width: 776px) {
-    /* below is fractions, so its 2 columns */
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1rem;
-  }
+  // @media (min-width: 776px) {
+  //   /* below is fractions, so its 2 columns */
+  //   grid-template-columns: 1fr 1fr;
+  //   grid-column-gap: 1rem;
+  // }
 `
 
 export default Locations

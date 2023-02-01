@@ -17,6 +17,7 @@ const PRODUCTS = graphql`
     items: allContentfulMenuItem (
       filter: {
         node_locale: { eq: "en-US" }
+        isFeatured: { eq: true }
       }
       sort: {
         fields: createdAt

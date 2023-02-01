@@ -19,9 +19,8 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <HomeHeader image={image}>
       <HomeBanner
-        title="eatery"
-        subtitle1={{ address: "1234 9th Ave, SF", phone: "(415) 123-4567" }}
-        subtitle2={{ address: "5678 18th St, SF", phone: "(415) 555-9247" }}
+        title="PROST!"
+        subtitle1={{ address: "Praça de São Tiago 11, Guimarães", phone: "913-680-152" }}
       >
         <BannerButtonWrapper>
           <Link to="/menu" style={{ textDecoration: "none" }}>

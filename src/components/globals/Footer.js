@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import styled from "styled-components"
 import { styles } from "../../utils"
 import { FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa"
+import Logo from "../Logo/Logo"
 
 export default class Footer extends Component {
   state = {
@@ -26,7 +27,7 @@ export default class Footer extends Component {
   render() {
     return (
       <FooterWrapper>
-        <div className="title">eatery</div>
+        <Logo className="title" alt />
         <div className="icons">
           {this.state.icons.map(icon => {
             return (
@@ -41,7 +42,7 @@ export default class Footer extends Component {
             )
           })}
         </div>
-        <p className="copyright">copyright &copy; 2019 Michael Claus</p>
+        <p className="copyright">copyright &copy; {new Date().getFullYear()} Tokyo</p>
       </FooterWrapper>
     )
   }
@@ -77,12 +78,6 @@ const FooterWrapper = styled.footer`
 
   .title {
     text-align: center;
-    width: 10rem;
-    color: ${styles.colors.mainYellow};
-    text-transform: uppercase;
-    padding: 0.3rem 1rem;
     margin: 0 auto 2rem auto;
-    font-size: 1.5rem;
-    ${styles.border({ color: `${styles.colors.mainYellow}` })}
   }
 `
