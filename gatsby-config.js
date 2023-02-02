@@ -8,6 +8,7 @@ module.exports = {
     author: `Ahmed Tokyo`,
   },
   plugins: [
+    `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

@@ -1,28 +1,22 @@
 import React from "react"
 
 import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import { Section } from "../../utils"
 
 import styled from "styled-components"
 
-const GALLERY_IMAGES = graphql`
-  {
-    aboutGalleryImages: allFile(
-      filter: { relativeDirectory: { eq: "aboutGallery" } }
-    ) {
-      edges {
-        node {
-          childImageSharp {
-            fluid(maxWidth: 500, maxHeight: 400) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+const GALLERY_IMAGES = graphql`{
+  aboutGalleryImages: allFile(filter: {relativeDirectory: {eq: "aboutGallery"}}) {
+    edges {
+      node {
+        childImageSharp {
+          gatsbyImageData(width: 500, height: 400, layout: CONSTRAINED)
         }
       }
     }
   }
-`
+}`
 
 export default function AboutGallery() {
   return (
@@ -36,19 +30,18 @@ export default function AboutGallery() {
               {images.map(item => {
                 return (
                   <div className="item">
-                    <Img
-                      fluid={item.node.childImageSharp.fluid}
-                      alt="About Gallery Image"
-                    />
+                    <GatsbyImage
+                      image={item.node.childImageSharp.gatsbyImageData}
+                      alt="About Gallery Image" />
                   </div>
-                )
+                );
               })}
             </AboutGalleryWrapper>
           </Section>
-        )
+        );
       }}
     />
-  )
+  );
 }
 
 const AboutGalleryWrapper = styled.div`

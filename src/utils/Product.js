@@ -3,16 +3,13 @@ import React from "react"
 import styled from "styled-components"
 import { styles } from "./index"
 
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-// destructring the product off of props, so we don't have to keep writing props.product
 export default function Product({ product }) {
-  const { name, price, ingredients } = product
-  const { fixed } = product.image
-  console.log('XXXXXX', fixed);
+  const { name, price, ingredients, image } = product
   return (
     <ProductWrapper>
-      <Img fixed={fixed} className="img" />
+      <GatsbyImage image={getImage(image)} className="img" />
       <div className="text">
         <div className="product-content">
           <h3 className="name">{name}</h3>
@@ -21,7 +18,7 @@ export default function Product({ product }) {
         <p className="info">{ingredients}</p>
       </div>
     </ProductWrapper>
-  )
+  );
 }
 
 const ProductWrapper = styled.div`

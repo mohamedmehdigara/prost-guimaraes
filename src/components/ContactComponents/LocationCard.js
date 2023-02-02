@@ -2,7 +2,7 @@ import React from "react"
 
 import styled from "styled-components"
 
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import OrderOnlineButton from "./OrderOnlineButton"
 
@@ -11,7 +11,7 @@ import { SectionButton, styles } from "../../utils"
 const LocationCard = ({ locationInfo, fluid }) => {
   return (
     <LocationCardWrapper>
-      <Img fluid={fluid} />
+      <GatsbyImage image={fluid} />
       <div className="text">
         <a className="link" href="https://www.google.com/maps/place/Prost!/@41.4434223,-8.2955322,17z/data=!3m1!4b1!4m5!3m4!1s0xd24efe533983059:0x8c96be163e474178!8m2!3d41.4434223!4d-8.2933382" target="_blank"><h3 className="address">{locationInfo.address}</h3></a>
         <a className="link" href={`tel:${locationInfo.phone.replaceAll(' ', '')}`}><h4 className="phone">{locationInfo.phone}</h4></a>
@@ -27,7 +27,7 @@ const LocationCard = ({ locationInfo, fluid }) => {
       </div>
       <OrderOnlineButton />
     </LocationCardWrapper>
-  )
+  );
 }
 
 const LocationCardWrapper = styled.div`

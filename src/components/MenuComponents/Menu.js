@@ -22,9 +22,7 @@ const GET_MENU = graphql`
           price
           ingredients
           image {
-            fixed(height: 150, width: 150) {
-              ...GatsbyContentfulFixed
-            }
+            gatsbyImageData(width: 150, height: 150)
           }
           categoryList
         }
@@ -49,5 +47,3 @@ export default class Menu extends Component {
     )
   }
 }
-
-const MenuItemWrapper = styled.div``

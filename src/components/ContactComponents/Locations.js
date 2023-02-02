@@ -6,21 +6,17 @@ import { StaticQuery, graphql } from "gatsby"
 
 import LocationCard from "./LocationCard"
 
-const GET_LOCATIONS = graphql`
-  {
-    getLocations: allFile(filter: { relativeDirectory: { eq: "locations" } }) {
-      edges {
-        node {
-          childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+const GET_LOCATIONS = graphql`{
+  getLocations: allFile(filter: {relativeDirectory: {eq: "locations"}}) {
+    edges {
+      node {
+        childImageSharp {
+          gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
     }
   }
-`
+}`
 
 const Locations = () => {
   return (
@@ -47,15 +43,15 @@ const Locations = () => {
           return locations.map(({ node }, index) => {
             return (
               <LocationCard
-                fluid={node.childImageSharp.fluid}
+                fluid={node.childImageSharp.gatsbyImageData}
                 locationInfo={locationInfo[index]}
               />
-            )
-          })
+            );
+          });
         }}
       />
     </LocationsWrapper>
-  )
+  );
 }
 
 const LocationsWrapper = styled.div`

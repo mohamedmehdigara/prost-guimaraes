@@ -29,9 +29,7 @@ const PRODUCTS = graphql`
           price
           ingredients
           image {
-            fixed(height: 150, width: 150) {
-              ...GatsbyContentfulFixed
-            }
+            gatsbyImageData(width: 150, height: 150)
           }
         }
       }

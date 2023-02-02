@@ -1,26 +1,22 @@
 import React from "react"
 
 import styled from "styled-components"
-import { styles, Section } from "../../utils"
+import { Section } from "../../utils"
 
 import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
-const GET_IMAGES = graphql`
-  {
-    getImages: allFile(filter: { relativeDirectory: { eq: "homeGallery" } }) {
-      edges {
-        node {
-          childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+const GET_IMAGES = graphql`{
+  getImages: allFile(filter: {relativeDirectory: {eq: "homeGallery"}}) {
+    edges {
+      node {
+        childImageSharp {
+          gatsbyImageData(width: 500, layout: CONSTRAINED)
         }
       }
     }
   }
-`
+}`
 
 export default function Gallery() {
   return (
@@ -36,16 +32,16 @@ export default function Gallery() {
               {images.map(({ node }, index) => {
                 return (
                   <div className={`item item-${index + 1}`} key={index}>
-                    <Img fluid={node.childImageSharp.fluid} />
+                    <GatsbyImage image={node.childImageSharp.gatsbyImageData} />
                   </div>
-                )
+                );
               })}
             </GalleryWrapper>
           </Section>
-        )
+        );
       }}
     />
-  )
+  );
 }
 // We utilize CSS GRIDS
 const GalleryWrapper = styled.div`
@@ -70,6 +66,7 @@ const GalleryWrapper = styled.div`
   }
   @media (min-width: 992px) {
     .gatsby-image-wrapper {
+      width: 100%;
       height: 100%;
     }
     grid-template-areas:
