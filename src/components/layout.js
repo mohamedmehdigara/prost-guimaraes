@@ -17,11 +17,11 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
-    <React.Fragment>
+    <>
       <Navbar />
       {children}
       <Footer />
-    </React.Fragment>
+    </>
   )
 }
 

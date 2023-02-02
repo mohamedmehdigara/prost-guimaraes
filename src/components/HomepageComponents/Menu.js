@@ -19,9 +19,7 @@ const PRODUCTS = graphql`
         node_locale: { eq: "en-US" }
         isFeatured: { eq: true }
       }
-      sort: {
-        fields: createdAt
-      }
+      sort: {createdAt: ASC}
     ) {
       edges {
         node {

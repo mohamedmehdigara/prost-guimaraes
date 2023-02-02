@@ -12,9 +12,7 @@ const GET_MENU = graphql`
       filter: {
         node_locale: { eq: "en-US" }
       }
-      sort: {
-        fields: createdAt
-      }
+      sort: {createdAt: ASC}
     ) {
       edges {
         node {
