@@ -8,22 +8,17 @@ export default function AboutText() {
   return (
     <AboutTextWrapper>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus
-        provident nostrum unde amet autem sapiente quisquam facilis hic,
-        accusamus pariatur labore ratione aliquid vero ipsum. Aut eum
-        reprehenderit delectus aspernatur cum nemo libero, autem, voluptatem
-        atque error molestiae, voluptates dicta sequi! Vero veritatis nobis eum
-        quae sapiente aliquid facilis, fugiat ea! Similique nihil officiis
-        nobis, ex itaque beatae nesciunt rem quasi cumque iusto dolorem vero
-        dolor maxime sint aut cum repellendus corrupti quam quibusdam. Vel est
-        numquam veritatis explicabo beatae cumque, eveniet accusamus optio
-        impedit sed quibusdam vitae odio quam quo corporis cum, odit voluptates
-        soluta harum necessitatibus non perferendis! Provident magnam aut sequi
-        incidunt, ut eius excepturi repellat culpa architecto inventore dolore
-        earum tempore deleniti? Accusantium saepe tempore officiis tenetur error
-        sit reiciendis nostrum! Nobis nihil ipsam consequuntur placeat odio
-        quibusdam eius, eum numquam obcaecati modi! Aspernatur, odit ex neque
-        dicta fuga placeat nulla sed nisi pariatur enim inventore.
+      Era uma vez um jovem chamado Kevin que vivia no coração de Guimarães. Era meio alemão, nascido de uma mãe portuguesa e de um pai alemão. Em miúdo, Kevin sempre foi fascinado pela rica cultura e história da terra do seu pai, e ansiava por experimentá-la por si próprio.
+
+      A pandemia confrontou-o com um futuro incerto, pelo que deixou o seu emprego na Alemanha e regressou a Portugal, para estar mais próximo da sua família e amigos. Apesar das circunstâncias difíceis, Kevin estava determinado a aproveitar ao máximo o seu tempo em Guimarães.
+
+      Um dia, enquanto explorava a cidade, Kevin notou um pequeno bar que precisava de um novo dono. Ele viu nele uma oportunidade de trazer um pedaço da Alemanha para Portugal, e criar um lugar onde as pessoas se pudessem juntar e apreciar o sabor autêntico da cerveja alemã.
+
+      Com essa visão no coração e uma paixão por cerveja, aceitou o desafio e abriu o "PROST!". Encheu-o com as melhores cervejas alemãs, e decorou-o com artigos tradicionais e lembranças da Alemanha. Ele queria criar uma atmosfera que transportasse os clientes para o coração da Alemanha, e oferecer-lhes uma experiência única e inesquecível.
+
+      À medida que o murmúrinho sobre o bar se espalhava, as pessoas vinham de toda a cidade para provar as autênticas cervejas alemãs e experimentar o ambiente caloroso e convidativo. Tornou-se rapidamente um local de encontro para pessoas de todos os estilos de vida, e uma fonte de inspiração e alegria num tempo de incertezas e dificuldades.
+
+      E assim, o bar PROST! vive como um símbolo de esperança no coração da cidade berço.
       </p>
     </AboutTextWrapper>
   )

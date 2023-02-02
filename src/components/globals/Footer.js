@@ -37,7 +37,7 @@ export default class Footer extends Component {
             )
           })}
         </div>
-        <p className="copyright">copyright &copy; {new Date().getFullYear()} Tokyo</p>
+        <p className="copyright">copyright &copy; {new Date().getFullYear()} <a href="https://ahmedtokyo.com" target="_blank">Tokyo</a></p>
       </FooterWrapper>
     )
   }
@@ -69,6 +69,9 @@ const FooterWrapper = styled.footer`
     text-transform: capitalize;
     text-align: center;
     margin: 1rem 0;
+    > a {
+      color: inherit;
+    }
   }
 
   .title {
