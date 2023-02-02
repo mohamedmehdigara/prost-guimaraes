@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 
 import { StaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
 import { Section, Title } from "../../utils"
 
 import MenuItemsContainer from "./MenuItemsContainer"

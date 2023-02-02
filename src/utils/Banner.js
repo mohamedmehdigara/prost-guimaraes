@@ -38,10 +38,8 @@ const BannerWrapper = styled.div`
   text-align: center;
 
   .logo {
-    margin: 0 auto 1rem;
-    font-size: 3rem;
-    width: 13.5rem;
-    height: 3.375rem;
+    margin: 0 auto 1.5rem;
+    scale: 1.75;
   }
 
   .link {

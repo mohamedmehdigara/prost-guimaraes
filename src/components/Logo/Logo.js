@@ -12,13 +12,14 @@ const Logo = ({ alt, ...rest }) => <LogoWrapper alt={alt} {...rest}>PROST!</Logo
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
-  font-family: avenir, sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
+  // Font was licensed by Prost Owner.
+  font-family: SoftsoulOT-Light, avenir, sans-serif;
+  // font-weight: 600;
+  font-size: 2.5rem;
   line-height: 1;
   text-decoration: none;
   border: 2px solid ${props => props.alt ? styles.colors.mainWhite : styles.colors.mainBlack};
-  width: 8.5rem;
+  width: 5.875rem;
   height: 2.375rem;
   color: ${props => props.alt ? styles.colors.mainWhite : styles.colors.mainBlack};
 `;

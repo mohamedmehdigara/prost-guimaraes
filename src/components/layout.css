@@ -9,3 +9,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'SoftsoulOT-Light';
+  font-weight: lighter;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Light';
+  src: url(/fonts/SoftsoulOT-Light.woff2) format("woff2");
+}
