@@ -25,12 +25,12 @@ const IndexPage = () => (
         <BannerButtonWrapper>
           <Link to="/menu" style={{ textDecoration: "none" }}>
             <BannerButton style={{ margin: "1.7rem 0.8rem" }}>
-              menu
+              MENU
             </BannerButton>
           </Link>
-          <Link to="/contact" style={{ textDecoration: "none" }}>
+          <Link to="https://glovoapp.com/pt/pt/guimaraes/prost-gms" style={{ textDecoration: "none" }}>
             <BannerButton style={{ margin: "1.7rem 0.8rem" }}>
-              contact
+              ORDER ONLINE
             </BannerButton>
           </Link>
         </BannerButtonWrapper>

@@ -11,13 +11,9 @@ export default class QuickInfo extends Component {
         <Title subtitle="let us tell you" title="our mission" />
         <QuickInfoWrapper>
           <p className="text">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
-            qui dicta accusamus itaque! Accusantium dicta, aliquid doloribus
-            eaque veritatis eius itaque voluptatibus impedit provident optio
-            vitae qui perspiciatis necessitatibus rem odio quae velit quod at
-            tempora aspernatur recusandae, assumenda fugit? Nemo iusto, deleniti
-            natus voluptas nisi sed omnis qui minus voluptatem beatae eos!
-            Dignissimos sint similique repudiandae consequatur commodi incidunt.
+            Visit us in the center of Guimarães, and enjoy the authentic taste of German draft beers! Whether you are looking for a night out with friends or a quiet drink after work, we have a warm and inviting atmosphere at your disposal. You'll want to come back for sure!
+            <br /><br />
+            Visite-nos no centro da cidade berço, e aprecie o verdadeiro sabor das cervejas de pressão alemãs! Quer esteja à procura de uma noite fora com amigos ou de uma bebida tranquila depois do trabalho, temos à sua disposição uma atmosfera calorosa e convidativa. Irá de certeza querer voltar!
           </p>
           <Link to="/about" style={{ textDecoration: "none" }}>
             {/* We define the generic / default styles in the SectionButton, but do all the 'positioning' styles inline like below */}

@@ -21,6 +21,7 @@ const LogoWrapper = styled.div`
   border: 2px solid ${props => props.alt ? styles.colors.mainWhite : styles.colors.mainBlack};
   width: 5.875rem;
   height: 2.375rem;
+  padding-bottom: 0.125rem;
   color: ${props => props.alt ? styles.colors.mainWhite : styles.colors.mainBlack};
 `;
 
